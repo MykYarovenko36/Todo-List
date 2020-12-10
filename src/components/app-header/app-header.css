@@ -1,0 +1,17 @@
+.app-header {
+    display: inline-flex;
+    height: 60px;
+    width: 500px;
+    align-items: flex-end;
+}
+
+.app-header h1 {
+    flex-grow: 2;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.app-header h2 {
+    font-size: 1.2rem;
+    color: grey;
+}

@@ -1,0 +1,29 @@
+.todo-list-item {
+    width: 464px;
+    height: 40px;
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+.list-item-label {
+ flex-grow: 1;
+ height: auto;
+ font-size: 1.4em;
+}
+.list-item-btn-group {
+    width: 90px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: space-around;
+}
+.list-item-btn {
+    width: 40px;
+    height: 40px;
+}
+.list-item-label.done {
+    text-decoration: line-through;
+}
+.list-item-label.important {
+    font-weight: bold;
+    color: steelblue;
+}
