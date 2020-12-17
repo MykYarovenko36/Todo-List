@@ -15,8 +15,8 @@ export default class App extends Component {
       this.createTodoItem('Have a lunch'),
       this.createTodoItem('Have a dinner')
     ],
-    term: 'all',
-    filter: 'all', // active, all, done
+    term: '',
+    filter: '', // active, all, done
   }
   createTodoItem(label) {
     return {
@@ -75,10 +75,9 @@ export default class App extends Component {
     if (term.length === 0) {
       return items;
     }
-    return items.filter((item) =>
-        item.label
-        .toLowerCase()
-        .indexOf(term.toLowerCase() > -1));
+    return items.filter((item) => {
+      return item.label.toLowerCase().indexOf(term.toLowerCase()) > - 1
+    });
   }
   onSearchChange = (term) => {
     this.setState({ term });
